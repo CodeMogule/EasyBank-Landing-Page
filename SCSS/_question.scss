@@ -1,0 +1,27 @@
+#question{
+    background-color: $veryLightGrey;
+    position: relative;
+    bottom: 2rem;
+    .question-text{
+        margin: 135px;
+        p{
+            width: 50%;
+            color: $grayishBlue;
+        }
+    }
+
+    .info-icon{
+        margin: 120px;
+        transform: translateY(-30%);
+        -webkit-transform: translateY(-30%);
+        -moz-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+        -o-transform: translateY(-30%);
+        img{
+            padding-bottom: 30px;
+        }
+        p{
+            color: $grayishBlue;
+        }
+}
+}

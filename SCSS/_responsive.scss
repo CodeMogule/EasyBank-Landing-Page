@@ -1,0 +1,41 @@
+@media only screen and (max-width:600px){
+    header{
+    .navbar-brand{
+        transform: translateX(-80%);
+        -webkit-transform: translateX(-80%);
+        -moz-transform: translateX(-80%);
+        -ms-transform: translateX(-80%);
+        -o-transform: translateX(-80%);
+}
+
+.header-btn{
+    display: none;
+}
+    }
+
+    #hero{
+        .hero-text{
+           margin: -0;
+        }
+
+        .hero-img{
+            right: 120%;
+            bottom: 40%;
+            .intro-hero{
+                width: 250%;
+                right: 100px;
+            }
+            .phones{
+                width: 90%;
+                top: 1%;
+                left: 24.5rem;
+                transform: translateY(-70%);
+                -webkit-transform: translateY(-70%);
+                -moz-transform: translateY(-70%);
+                -ms-transform: translateY(-70%);
+                -o-transform: translateY(-70%);
+}
+        }
+    }
+
+}

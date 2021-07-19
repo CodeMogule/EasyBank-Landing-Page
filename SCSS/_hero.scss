@@ -1,0 +1,38 @@
+@import './config';
+
+#hero{
+ position: relative;
+ height: 75vh;
+    .hero-text{
+        margin: 135px;
+        h1{
+            width: 40%;
+        }
+        p{
+            width: 45%;
+            color: $grayishBlue;
+            margin-top: 15px;
+        }
+        .hero-btn{
+            @include buttonStyle;
+            text-align: center;
+        }
+       
+    }
+    .hero-img{
+        position: relative;
+        height: 30vh;
+        .intro-hero{
+            position: absolute;
+            left: 45%;
+            bottom: 0;
+            z-index: -10000;
+        }
+        .phones{
+           position: relative;
+           left: 60%;
+           bottom: 35rem;
+           z-index: -10000;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import './config';
+
+header{
+    background-color: $white;
+   .navbar{
+       width: 1500vw;
+   }
+    .navbar-brand{
+        margin-left: 100px;
+    }
+    .navbar-nav{
+        margin-left: 30%;
+        position: relative;
+        top: 15px;
+        .nav-link{
+            color: hsl(233, 8%, 62%);
+            @include navLine;
+        }
+    }
+    .header-btn{
+        @include buttonStyle;
+        border: transparent;
+        transform: translateX(-5rem);
+        -webkit-transform: translateX(-5rem);
+        -moz-transform: translateX(-5rem);
+        -ms-transform: translateX(-5rem);
+        -o-transform: translateX(-5rem);
+}
+}

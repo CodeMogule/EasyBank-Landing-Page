@@ -1,0 +1,56 @@
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan:  hsl(192, 70%, 51%);
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayeshBlue: hsl(220, 16%, 96%);
+$veryLightGrey:hsl(0, 0%, 98%);
+$white:hsl(0, 0%, 100%);
+
+//button config
+@mixin buttonStyle {
+        color:  hsl(0, 0%, 100%);
+        background:linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        white-space: nowrap;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 70%;
+        display: inline-block;
+        width:150px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        transition:0.5s ;
+        -webkit-transition:0.5s ;
+        -moz-transition:0.5s ;
+        -ms-transition:0.5s ;
+        -o-transition:0.5s ;
+&:hover{
+            opacity: 0.5;
+        }
+}
+
+@mixin navLine {
+    &::after{
+        content: "";
+        display: inline-block;
+        border-bottom: 5px solid transparent ;
+        border-image: linear-gradient( to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        border-image-slice: 1;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        left: 1px;
+        transition: .3s;
+        opacity: 0;
+        transition:0.5s;
+        -webkit-transition:0.5s;
+        -moz-transition:0.5s;
+        -ms-transition:0.5s;
+        -o-transition:0.5s;
+}
+    &:hover::after{
+        opacity: 1;
+    }
+}

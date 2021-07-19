@@ -1,0 +1,20 @@
+@import './header';
+@import './hero';
+@import './question';
+@import './article';
+@import './footer';
+@import './responsive';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(0, 0%, 98%);
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+}
