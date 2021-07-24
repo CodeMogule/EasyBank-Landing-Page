@@ -18,7 +18,10 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="Logo"></a>
-         <a href=""><img src="./images/icon-hamburger.svg" alt=""></a>
+          <div class="toggle-btn">
+         <a href="" class="hamburger"><img src="./images/icon-hamburger.svg" alt=""  onclick="showMenu(event)"></a>
+         <a href="" class="close"><img src="./images/icon-close.svg" alt=""  onclick="closeMenu(event)"></a>
+         </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -44,6 +47,19 @@
 </div>
 </header>
 
+<div class="mobile-menu">
+  <nav id="menu-container">
+  <ul class="menu-lists">
+    <li class="lists">Home</li>
+    <li class="lists">About</li>
+    <li class="lists">Contact</li>
+    <li class="lists">Blog</li>
+    <li class="lists">Careers</li>
+  </ul>
+  </nav>
+</div>
+
+<div class="page-wrap">
 <section id="hero">
 <div class="hero-text">
     <h1>Next Generation Digital Banking</h1>
@@ -51,14 +67,18 @@
     <a href="#" class="hero-btn">Request Invite</a>
     </div>
   <div class="hero-img">
+    <picture>
+      <source media="(max-width:992px)" srcset="./images/bg-intro-mobile.svg" class="intro-hero">
+      <source media="(min-width:992px )" srcset="./images/bg-intro-desktop.svg" class="intro-hero">
     <img src="./images/bg-intro-desktop.svg" alt="hero-img" class="intro-hero">
+    </picture>
     <img src="./images/image-mockups.png" alt="phones" class="phones">
   </div>
 </section>
 
 <section id="question">
 <div class="question-text">
-<h3>Why Choose Easy Bank</h3>
+<h3>Why Choose Easy Bank?</h3>
 <p>We Leverage Open Banking to turn your bank account into your financial hub.Control your finances like never before</p>
 </div>
 <div class="container info-icon">
@@ -95,7 +115,7 @@
 <div class="container articles-content">
   <div class="row">
     <div class="col-lg row-md row-sm content">
-      <div class="card" style="width: 15rem;">
+      <div class="card mx-auto" style="width: 15rem;">
         <img src="/images/image-currency.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <p>By a writer</p>
@@ -105,7 +125,7 @@
       </div>
     </div>
     <div class="col-lg row-md row-sm content">
-      <div class="card" style="width: 15rem;">
+      <div class="card mx-auto" style="width: 15rem;">
         <img src="./images/image-restaurant.jpg" class="card-img-top" alt="image-restaurant">
         <div class="card-body">
           <p>By a Writer</p>
@@ -115,7 +135,7 @@
       </div>
     </div>
     <div class="col-lg row-md row-sm content">
-      <div class="card" style="width: 15rem;">
+      <div class="card mx-auto" style="width: 15rem;">
         <img src="/images/image-plane.jpg" class="card-img-top" alt="image-plane">
         <div class="card-body">
           <p>By a Writer</p>
@@ -125,7 +145,7 @@
       </div>
     </div>
     <div class="col-lg row-md row-sm content">
-      <div class="card" style="width: 15rem;">
+      <div class="card mx-auto" style="width: 15rem;">
         <img src="/images/image-confetti.jpg" class="card-img-top" alt="covvette">
         <div class="card-body">
           <p>By a Writer</p>
@@ -174,6 +194,7 @@
       <p>@EasyBank. All Rights Reserved</p>
     </div>
 </footer>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./JS/app.js"></script>
 </body>

@@ -2,6 +2,9 @@
 
 header{
     background-color: $white;
+    .hamburger{
+        display: none;
+    }
    .navbar{
        width: 1500vw;
    }
